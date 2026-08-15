@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(git add -A; git status --short | Select-String -Pattern \"node_modules|\\\\.env\" ; Write-Output \"---count---\"; \\(git diff --cached --name-only | Measure-Object -Line\\).Lines)",
+      "PowerShell(git -C \"c:\\\\Users\\\\abddu\\\\Desktop\\\\RAG PIPELINE\\\\RAG-Pipeline\\\\frontend\" log --oneline -10)",
+      "PowerShell(git -C \"c:\\\\Users\\\\abddu\\\\Desktop\\\\RAG PIPELINE\\\\RAG-Pipeline\\\\frontend\" remote -v)",
+      "PowerShell(git -C \"c:\\\\Users\\\\abddu\\\\Desktop\\\\RAG PIPELINE\\\\RAG-Pipeline\\\\frontend\" status --short)",
+      "PowerShell(git reset -q .claude/settings.json)",
+      "PowerShell(git push -u origin main)",
+      "PowerShell(git add .claude/settings.json)",
+      "PowerShell(git push)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\abddu\\Desktop\\RAG PIPELINE\\RAG-Pipeline\\frontend\\.git"
+    ]
+  }
+}
